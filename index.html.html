@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me - Safi Nafi</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        section{
+            background: #044376;
+            padding: 20px;
+        }
+        .me, .neighbors{
+            background: rgb(47, 47, 47);
+            color: #fff;
+        }
+        .classes, .games{
+            color: #fff;
+        }
+        .mood{
+            background: #fff;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        .games a{
+            color: rgb(0, 255, 34);
+        }
+        .me a{
+            color: #0078d7;
+        }
+        section ul {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .mood .moods{
+            display: flex;
+            font-size: 24px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .mood img{
+            width: 100%;
+            max-width: 400px;
+        }
+        .mood div span{
+            display: block;
+            margin-bottom: 10px;
+        }
+        /* •	Make every paragraph start with a drop-caps; that is, a large initial letter that is 1.5 times the normal paragraph font size. (Hint: Look for information about CSS pseudo-elements.) */
+        p::first-letter {
+            font-size: 24px;
+        }
+        /* Modify your page's Top 3 movies/shows list to be in decreasing order, from 3 down to 1. */
+        .order{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .order li div {
+            color: #f403d8;
+        }
+        .order li div ul{
+            color: #fff;
+        }
+        .order li div ul li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <section class="me marquee">
+        <h1>About Safi Nafi</h1>
+        <p>My name is Safi Nafi and I am <b><a href="https://en.wikipedia.org/wiki/MEAN_(solution_stack)">MERN Stack developer</a></b></p>
+        <div>
+            <p>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="https://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="Valid CSS!" />
+                </a>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                        alt="Valid XHTML!" />
+                </a>
+            </p>        
+            <a href="https://domain.com/validate-css.php"><img src="https://domain.com/w3c-css.png" alt=""></a>
+        </div>
+    </section>
+    <section class="classes">
+        <h2>My classes this semester</h2>
+        <ul>
+            <li>Building Web Applications</li>
+            <li>Data Communication Systems</li>
+            <li>Data Communication Systems Lab</li>
+            <li>Engineering Economy</li>
+            <li>English Communication Skills</li>
+            <li>Operating Systems</li>
+            <li>Operating Systems Lab</li>
+            <li>Software Project</li>
+        </ul>
+    </section>
+    <section class="games">
+        <h2>My favorite games</h2>
+        <ol class="order">
+            <li>
+                <span>Apex legends <a href="https://store.steampowered.com/app/1172470/Apex_Legends/">(STEAM)</a></span>
+                <div>
+                    game type:
+                    <ul>
+                        <li>Battle Royale</li>
+                    </ul>
+                    game price:
+                    <ul>
+                        <li>Free</li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>Tom Clancy's Rainbow Six® Siege <a href="https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/">(STEAM)</a></li>
+            <li>Rocket League® <a href="https://store.epicgames.com/en-US/p/rocket-league">(EPIC GAMES)</a></li>
+        </ol>
+    </section>
+    <section class="mood">
+        <h2>My Mood</h2>
+        <div class="moods">
+            <div>
+                <span>Happy</span>
+                <img src="https://thegoodguys.sirv.com/Content/2023FY/Articles/Ultimate-Gaming-Room-Setup/Gaming%201.png?profile=bce?profile=bce" alt="">
+            </div>
+            <div>
+                <span>Sad</span>
+                <img src="https://thegoodguys.sirv.com/Content/2023FY/Articles/Ultimate-Gaming-Room-Setup/Gaming%201.png?profile=bce?profile=bce" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="neighbors">
+        <h2>Facts about my neighbors</h2>
+        <ul>
+            <li>Ali has a cat that sleeps 24/7.</li>
+            <li>Ahmad washes his car every day.</li>
+        </ul>
+    </section>
+</body>
+</html>
